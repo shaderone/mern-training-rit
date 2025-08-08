@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+
+<h1>Event Registration</h1>
+
+<form action="submit.php" method="post">
+    <p>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+    </p>
+
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+        <label for="phone">Phone Number (Format: 123-456-7890):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+    </p>
+
+    <p>
+        <label for="attendees">Number of Attendees:</label>
+        <input type="number" id="attendees" name="attendees" min="1" max="10" required>
+    </p>
+
+    <p>
+        <label for="eventdate">Event Date:</label>
+        <input type="date" id="eventdate" name="eventdate" min="2025-08-10" required>
+    </p>
+
+    <p>
+        <label for="eventtime">Event Time:</label>
+        <input type="time" id="eventtime" name="eventtime" required>
+    </p>
+
+    <p>
+        <label for="eventtype">Event Type:</label>
+        <select id="eventtype" name="eventtype" required>
+            <option value="" disabled selected>Select an event type</option>
+            <option value="conference">Conference</option>
+            <option value="workshop">Workshop</option>
+            <option value="webinar">Webinar</option>
+        </select>
+    </p>
+
+    <p>
+        <label>Dietary Restrictions:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="diet[]" value="vegetarian"> Vegetarian</label>
+            <label><input type="checkbox" name="diet[]" value="glutenfree"> Gluten-Free</label>
+        </div>
+    </p>
+
+    <p>
+        <label>T-shirt Size:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="tshirt" value="S" required> S</label>
+            <label><input type="radio" name="tshirt" value="M"> M</label>
+            <label><input type="radio" name="tshirt" value="L"> L</label>
+            <label><input type="radio" name="tshirt" value="XL"> XL</label>
+        </div>
+    </p>
+
+    <p>
+        <label for="comments">Comments/Questions:</label>
+        <textarea id="comments" name="comments" maxlength="250" placeholder="Enter your comments here (max 250 characters)..."></textarea>
+    </p>
+
+    <p>
+        <button type="submit">Register</button>
+    </p>
+</form>
+
+</body>
+</html>
