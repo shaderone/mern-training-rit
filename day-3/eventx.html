@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventX</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        .sec-height {
+            height: calc(100dvh - 4.5rem);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-fuchsia-600 to-purple-600">
+
+    <header
+        class="relative flex justify-between w-full sticky top-0 space-x-4 py-4 px-5 h-[10dvh] shadow-xl mx-auto bg-white z-10">
+        <h1 class="text-3xl font-bold">EventX</h1>
+        <div id="nav" class="md:flex hidden space-x-4">
+            <nav class="flex gap-x-4 items-center">
+                <li><a href="index.html" class="hover:text-blue-500 hover:text-gray-400">Home</a></li>
+                <li><a href="eventx.html" class="hover:text-blue-500 hover:text-gray-400">Events</a></li>
+                <li><a href="#" class="hover:text-blue-500 hover:text-gray-400">About</a></li>
+            </nav>
+            <a href="#reserve" class="bg-purple-800 px-3 py-2 rounded-lg text-white">Register</a>
+        </div>
+        <div id="toggle" class="md:hidden flex items-center cursor-pointer">
+            <svg width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                    <path d="M3 6h18" />
+                    <path d="M3 12h18" />
+                    <path d="M3 18h18" />
+                </g>
+            </svg>
+
+        </div>
+    </header>
+
+    <section class="sec-height relative flex flex-col justify-center items-center h-[calc(100dvh-4.5rem)] space-y-6 px-4 
+                    bg-[linear-gradient(to_right,rgba(93,17,102,0.6),rgba(88,30,141,0.6)),url('/bg.jpg')] 
+                    bg-cover bg-center">
+
+        <h1 class="xl:text-6xl md:text-4xl sm:text-3xl text-xl font-bold text-white text-center">
+            Ignite your <strong class="text-amber-400">creativity</strong> at
+            <strong class="text-amber-400 underline">Inspire</strong> 2025
+        </h1>
+
+        <p class="text-white text-center mt-4">
+            Join us for a transformative experience where innovation meets inspiration.Discover, connect, and create at
+            Inspire 2025.
+        </p>
+
+        <a href="#reserve"
+            class="px-8 py-3 bg-white rounded-3xl transition duration-300 hover:-translate-y-1 hover:shadow-3xl hover:border-amber-500 border-3 border-transparent">
+            Reserve your seat
+        </a>
+    </section>
+
+    <section class="sec-height bg-gray-900 py-10 px-5 text-white flex flex-col justify-center items-center gap-y-4">
+        <h1 class="font-bold text-4xl text-center">About the Event</h1>
+        <p class="text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus exercitationem saepe velit ab! Illo
+            commodi atque pariatur repellat odio officia, eum culpa accusantium, consequatur doloribus hic incidunt
+            officiis.
+        </p>
+    </section>
+
+    <section class="sec-height bg-gray-800 p-8 text-white flex flex-col justify-center items-center gap-y-4">
+        <h1 class="font-bold text-4xl text-center">Event Highlights</h1>
+        <div class="grid gap-6 mt-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-auto justify-center">
+
+            <div class="card bg-gray-700 p-4 rounded-lg text-center space-y-2">
+                <img src="image.png" alt="avatar" class="w-10 h-10 rounded-full mx-auto">
+                <h1 class="text-2xl font-bold">Keynote Talk</h1>
+                <p class="text-white/50">Card description goes here. This is a brief overview of the card content.</p>
+            </div>
+            <div class="card bg-gray-700 p-4 rounded-lg text-center space-y-2">
+                <img src="image.png" alt="avatar" class="w-10 h-10 rounded-full mx-auto">
+                <h1 class="text-2xl font-bold">DJ party</h1>
+                <p class="text-white/50">Card description goes here. This is a brief overview of the card content.</p>
+            </div>
+            <div class="card bg-gray-700 p-4 rounded-lg text-center space-y-2">
+                <img src="image.png" alt="avatar" class="w-10 h-10 rounded-full mx-auto">
+                <h1 class="text-2xl font-bold">Mini Games</h1>
+                <p class="text-white/50">Card description goes here. This is a brief overview of the card content.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-height bg-gray-900 p-8 text-white flex flex-col justify-center items-center gap-y-4">
+        <h1 class="font-bold text-4xl text-center">Event Schedules</h1>
+        <div class="grid gap-6 mt-4 grid-cols-1 justify-center w-full">
+
+            <div class="card bg-gray-700 p-4 rounded-lg flex justify-between space-y-2">
+                <div>
+                    <h1 class="text-2xl font-bold">Day 1 : Vision & Innovation</h1>
+                    <p class="text-white/50">Keynotes and product showcases</p>
+                </div>
+                <small class="text-lg text-blue-200"><i>10:00 AM - 05:00 PM</i></small>
+            </div>
+            <div class="card bg-gray-700 p-4 rounded-lg flex justify-between space-y-2">
+                <div>
+                    <h1 class="text-2xl font-bold">Day 2 : Workshops & Networking</h1>
+                    <p class="text-white/50">Interactive Sessions & Meetups.</p>
+                </div>
+                <small class="text-lg text-blue-200"><i>10:00 AM - 04:00 PM</i></small>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserve"
+        class="h-[calc(90dvh-4.5rem)] bg-blue-400 py-10 px-5 text-white flex flex-col justify-center items-center gap-y-4">
+        <div class="flex flex-col gap-y-4 ">
+            <h1 class="font-bold text-4xl text-center mb-5">Reserve Your Spot!</h1>
+            <input type="email" placeholder="Enter your phone" class="px-4 bg-white py-2 rounded-lg text-black " />
+            <input type="email" placeholder="Enter your email" class="px-4 bg-white py-2 rounded-lg text-black " />
+            <button
+                class="px-8 py-3 bg-white rounded-3xl transition duration-300 hover:-translate-y-1 hover:shadow-3xl hover:border-amber-500 border-3 border-transparent mt-4 text-black">
+                Reserve Now
+            </button>
+        </div>
+
+    </section>
+
+    <footer class="h-[10dvh] bg-gray-800 text-white p-4 text-center flex justify-between items-center">
+        <span>&copy; 2024 EventX. All rights reserved.</span>
+        <a href="#top" class=" bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition">
+            ↑ Top
+        </a>
+    </footer>
+</body>
+
+</html>
