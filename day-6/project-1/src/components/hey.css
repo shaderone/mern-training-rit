@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.title {
+  color: transparent;
+  -webkit-text-stroke: 2px #646cff;
+  font-size: 4rem;
+  animation: animate 6s linear infinite forwards;
+  font-family: 'Audiowide', cursive;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  } 25% {
+    filter: hue-rotate(360deg);
+  } 50% {
+    filter: hue-rotate(720deg);
+  } 75% {
+    filter: hue-rotate(1080deg);
+  } 100% {
+    filter: hue-rotate(1440deg);
+  }
+  
+}
